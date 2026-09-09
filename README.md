@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.5.1**
+현재 최신 배포 버전: **v0.5.3**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,19 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.5.1 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.1/StemLab-Setup-x64.exe
+- v0.5.3 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.3/StemLab-Setup-x64.exe
+
+## v0.5.3 주요 기능
+
+- 메인 화면과 Windows 창 제목에서 현재 설치 버전 확인
+- 실행 중인 Stem Lab 창과 작업표시줄에 전용 앱 아이콘 적용
+- 업데이트 버튼을 `업데이트 다운로드 후 종료`로 변경
+- 업데이트 다운로드 주소를 연 뒤 현재 Stem Lab 자동 종료
+- 파트 분리/분석/보컬 추가 분리/Key 변경 작업 중에는 업데이트 안내를 작업 완료 후 표시
+
+## v0.5.2 주요 수정
+
+- 최초 BPM/Key 분석 완료 후에도 `재생 속도 / BPM 변경 사용` 체크박스가 비활성화 상태로 남던 문제 수정
 
 ## v0.5.1 주요 기능
 
@@ -23,7 +35,9 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 ## 자동 업데이트
 
-Stem Lab v0.5.0부터 프로그램 시작 시 이 저장소의 최신 Release를 자동으로 확인합니다. 현재 설치된 버전보다 새 Release가 있으면 업데이트 안내창을 표시하고, 사용자가 선택하면 해당 Release의 `StemLab-Setup-x64.exe` 다운로드를 엽니다.
+Stem Lab v0.5.0부터 프로그램 시작 시 이 저장소의 최신 Release를 자동으로 확인합니다. 현재 설치된 버전보다 새 Release가 있으면 업데이트 안내창을 표시합니다.
+
+v0.5.3부터 `업데이트 다운로드 후 종료`를 선택하면 최신 `StemLab-Setup-x64.exe` 다운로드 주소를 기본 브라우저에서 연 뒤 현재 Stem Lab을 종료합니다. 백그라운드 음원 작업이 진행 중인 경우에는 업데이트 안내를 즉시 띄우지 않고 작업 완료 후 표시합니다.
 
 새 버전 배포 시 최신 Release에는 반드시 아래 이름의 설치파일 Asset이 존재해야 합니다.
 
