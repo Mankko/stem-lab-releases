@@ -9,6 +9,16 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
 
+## 자동 업데이트
+
+Stem Lab v0.5.0부터 프로그램 시작 시 이 저장소의 최신 Release를 자동으로 확인합니다. 현재 설치된 버전보다 새 Release가 있으면 업데이트 안내창을 표시하고, 사용자가 선택하면 해당 Release의 `StemLab-Setup-x64.exe` 다운로드를 엽니다.
+
+새 버전 배포 시에는 최신 Release에 아래 이름의 설치파일 Asset이 반드시 존재해야 합니다.
+
+```text
+StemLab-Setup-x64.exe
+```
+
 ## 배포 형식
 
 - 파일명: `StemLab-Setup-x64.exe`
