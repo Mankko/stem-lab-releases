@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.5.4**
+현재 최신 배포 버전: **v0.5.5**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,16 +10,17 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.5.4 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.4/StemLab-Setup-x64.exe
+- v0.5.5 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.5/StemLab-Setup-x64.exe
 
-## v0.5.4 주요 기능
+## v0.5.5 주요 개선
 
-- `특정 구간만 추출해서 파트 나누기` 기능 추가
-- 시작/종료 시간을 `MM:SS`, `HH:MM:SS`, 밀리초 단위로 입력 가능
-- 선택 구간을 FFmpeg로 먼저 잘라 해당 구간만 Demucs 분리 및 BPM/Key 분석
-- 원본 음원은 수정하지 않음
-- 구간 추출 임시 파일은 사용자 PC 로컬 임시 영역에서만 처리하고 분리 완료 후 삭제
-- 긴 음원/YouTube 입력에서 필요한 구간만 AI 처리 가능
+- 특정 구간 추출의 시작/종료 시간을 각각 선택적으로 입력 가능
+- 종료만 입력하면 처음부터 지정 시간까지 추출
+- 시작만 입력하면 지정 시간부터 원본 끝까지 추출
+- 시작/종료를 모두 입력하면 두 시간 사이만 추출
+- 시간 입력란의 빈 값을 `처음` / `끝` 의미로 명확하게 표시
+- `노래 파트 나누기 시작` 버튼을 침범하던 중복 안내 문구 제거
+- 구간 추출은 사용자 PC의 로컬 임시 영역에서 처리하며 GitHub에 음원/Stem을 업로드하지 않음
 
 ## 기존 주요 기능
 
