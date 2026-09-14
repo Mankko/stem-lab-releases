@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.5.5**
+현재 최신 배포 버전: **v0.5.6**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,20 +10,22 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.5.5 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.5/StemLab-Setup-x64.exe
+- v0.5.6 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.6/StemLab-Setup-x64.exe
 
-## v0.5.5 주요 개선
+## v0.5.6 주요 개선
 
-- 특정 구간 추출의 시작/종료 시간을 각각 선택적으로 입력 가능
-- 종료만 입력하면 처음부터 지정 시간까지 추출
-- 시작만 입력하면 지정 시간부터 원본 끝까지 추출
-- 시작/종료를 모두 입력하면 두 시간 사이만 추출
-- 시간 입력란의 빈 값을 `처음` / `끝` 의미로 명확하게 표시
-- `노래 파트 나누기 시작` 버튼을 침범하던 중복 안내 문구 제거
-- 구간 추출은 사용자 PC의 로컬 임시 영역에서 처리하며 GitHub에 음원/Stem을 업로드하지 않음
+- 설치 프로그램에서 한국어 / English 선택 가능
+- 설치 시 선택한 언어를 Stem Lab 앱 언어로 그대로 사용
+- 업데이트 설치 시 기존 설치 언어를 유지하도록 처리
+- 기본 화면뿐 아니라 구간 추출, Tempo/BPM, 진행 상태, 오류 메시지, 업데이트 안내 등 사용자 노출 문자열의 한국어/영어 지원 정리
+- 번역 카탈로그 키/placeholder 및 English 번역 잔여 한글 검증 테스트 추가
+- 한국어/English Main Window UI smoke test 추가
+- Windows 설치파일을 실제 생성하는 Source Quality 검증 Workflow 추가
+- 검증 Workflow는 설치파일을 Actions Artifact나 Release로 저장하지 않아 GitHub 저장공간을 중복 사용하지 않음
 
 ## 기존 주요 기능
 
+- 특정 구간 추출의 시작/종료 시간을 각각 선택적으로 입력 가능
 - Demucs 4/6 파트 분리
 - Lead / Backing Vocal 추가 분리
 - BPM / Key 분석
