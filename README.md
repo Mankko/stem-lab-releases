@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.5.7**
+현재 최신 배포 버전: **v0.6.0**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,19 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.5.7 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.7/StemLab-Setup-x64.exe
+- v0.6.0 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.6.0/StemLab-Setup-x64.exe
+
+## v0.6.0 주요 기능
+
+- 메인 화면의 인라인 미리듣기 컨트롤을 별도 `Stem Lab Player` 창으로 분리
+- Player에서 재생 / 일시정지·계속 / 정지 / 탐색(Seek) 지원
+- 현재 Preview 선택, Mute/Solo, Stem별 볼륨, Key 변경, Tempo/BPM 변경 상태를 Player 재생에 반영
+- 재생 전에 현재 유효 BPM에 맞춘 4박 Count-in 추가
+- Count-in은 기본 ON이며 4박 종료 후 음악 자동 시작
+- Tempo 변경 사용 시 Target BPM을 Count-in 기준으로 사용
+- Count-in 중 Pause/Resume/Stop 지원
+- 한국어 / English Player UI 지원
+- Player / Count-in 회귀 테스트 및 Windows 패키징 검증 완료
 
 ## v0.5.7 주요 수정
 
@@ -40,7 +52,8 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 - BPM / Key 분석
 - 반주 Key 변경
 - 재생 속도 / 목표 BPM 변경 50% ~ 150%
-- 파트별 Mute / Solo / 볼륨 조절 및 미리듣기
+- 파트별 Mute / Solo / 볼륨 조절
+- 별도 Player 미리듣기 및 4박 Count-in
 - WAV 24-bit / MP3 320 kbps 저장
 - NVIDIA CUDA 자동 감지
 - 프로그램 시작 시 최신 버전 자동 확인
