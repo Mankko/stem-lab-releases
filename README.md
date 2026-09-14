@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.5.6**
+현재 최신 배포 버전: **v0.5.7**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,16 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.5.6 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.6/StemLab-Setup-x64.exe
+- v0.5.7 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.5.7/StemLab-Setup-x64.exe
+
+## v0.5.7 주요 수정
+
+- `Start Stem Separation` 버튼과 하단 경계선이 붙어 보이던 UI 여백 문제 수정
+- 분리 후 BPM / Key 분석이 완료되어도 `Enable Playback Speed / BPM Change`가 비활성 상태로 남던 문제 수정
+- Stem 분리, BPM / Key 분석, 선택적 보컬 추가 분리가 모두 끝난 뒤 완료 안내창이 안정적으로 표시되도록 수정
+- BPM / Key 완료 메시지 처리 중 Key 값 포맷 충돌로 후처리가 중단될 수 있던 문제 수정
+- English UI의 상단 초기화 버튼을 `Start Over`에서 `Reset`으로 변경
+- 관련 UI 및 완료 처리 회귀 테스트 추가
 
 ## v0.5.6 주요 개선
 
