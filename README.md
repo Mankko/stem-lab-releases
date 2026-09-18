@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.6.0**
+현재 최신 배포 버전: **v0.8.0**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,43 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.6.0 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.6.0/StemLab-Setup-x64.exe
+- v0.8.0 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.0/StemLab-Setup-x64.exe
+
+## v0.8.0 주요 기능
+
+- 코드악보 인식 정확도와 리듬 정렬 개선
+  - Beat This 기반 beat/downbeat 추적
+  - lv-chordia 기반 코드 인식 및 보조 ensemble
+  - 0.5박 단위 코드 위치 표현
+  - Slash chord / 확장 코드 / Key 기준 enharmonic spelling 보강
+- 코드악보 편집 기능 강화
+  - 코드 직접 수정
+  - 마디 추가 / 삭제
+  - 수동 가사 입력
+  - Undo / Redo
+  - 방향키 코드칸 이동
+  - 화면 폭에 따른 코드 폰트 자동 조절
+- Player 연동
+  - 재생 중 현재 마디 강조
+  - 현재 마디 자동 스크롤
+  - 코드 클릭은 편집 전용으로 유지
+- 코드악보 표시 설정
+  - BPM 직접 수정
+  - 코드악보 전용 Key 변경 `-6 ~ +6`
+  - 1반음 단위 조절
+  - 저장 악보의 BPM / Key 상태 복원
+- 저장 악보 관리
+  - 새 악보 저장
+  - 기존 악보 덮어쓰기
+  - 다른 이름으로 저장
+  - 저장 악보 삭제
+- 출력
+  - A4 인쇄 미리보기
+  - PDF 저장
+  - 제목 / BPM / Key / 박자표 / 코드 / 가사 출력
+- 자동 가사 인식은 제거하고 가사는 코드악보에서 직접 입력하는 방식으로 정리
+- 한국어 / English UI 유지
+- 전체 회귀 테스트 및 Windows 패키징 검증 완료
 
 ## v0.6.0 주요 기능
 
