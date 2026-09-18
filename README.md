@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.2**
+현재 최신 배포 버전: **v0.8.3**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,15 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.2 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.2/StemLab-Setup-x64.exe
+- v0.8.3 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.3/StemLab-Setup-x64.exe
+
+## v0.8.3 수정사항
+
+- 코드악보 BPM 직접 입력 시 소수점 이하 값이 되돌아가던 문제 수정
+- BPM 위/아래 버튼 0.1 BPM 증감값이 Tempo 퍼센트 반올림으로 변형되던 문제 수정
+- 코드악보 BPM 적용 중 playback/tempo 역방향 동기화 차단
+- 실제 playback/export tempo rate를 정확한 target BPM 기준으로 계산
+- 관련 회귀 테스트 추가 및 197 tests 통과
 
 ## v0.8.2 수정사항
 
