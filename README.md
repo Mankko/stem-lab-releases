@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.0**
+현재 최신 배포 버전: **v0.8.1**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,15 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.0 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.0/StemLab-Setup-x64.exe
+- v0.8.1 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.1/StemLab-Setup-x64.exe
+
+## v0.8.1 수정사항
+
+- Windows 설치본에서 누락됐던 lv-chordia worker 파일 포함
+- 코드악보 최초 사용 시 전용 lv-chordia / Beat This CPU 런타임 자동 구성
+- fallback 코드 분석에도 곡 정보 분석 Key 전달
+- 코드악보 Original Key가 곡 정보 분석 Key를 기준으로 유지되도록 수정
+- Windows frozen smoke test에 chord worker 존재 여부 검증 추가
 
 ## v0.8.0 주요 기능
 
