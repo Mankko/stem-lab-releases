@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.1**
+현재 최신 배포 버전: **v0.8.2**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,13 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.1 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.1/StemLab-Setup-x64.exe
+- v0.8.2 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.2/StemLab-Setup-x64.exe
+
+## v0.8.2 수정사항
+
+- 메인 창 최소 크기를 1200x800으로 상향해 Windows 배율 환경에서 입력 영역이 눌리는 현상 완화
+- 코드악보 생성 시 primary lv-chordia worker가 Windows Terminal 창을 띄우지 않도록 `CREATE_NO_WINDOW` 적용
+- 관련 회귀 테스트 추가
 
 ## v0.8.1 수정사항
 
