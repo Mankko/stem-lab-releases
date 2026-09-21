@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.3**
+현재 최신 배포 버전: **v0.8.4**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,17 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.3 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.3/StemLab-Setup-x64.exe
+- v0.8.4 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.4/StemLab-Setup-x64.exe
+
+## v0.8.4 수정사항
+
+- YouTube 오디오 가져오기 중 HTTP 403/408/425/429/5xx 및 일시적 네트워크 오류 자동 재시도
+- 최대 3회까지 새 yt-dlp 세션으로 원본 URL부터 다시 추출
+- yt-dlp 내부 retries / fragment_retries / extractor_retries 및 socket timeout 적용
+- 실패 시도별 임시 다운로드 파일 격리/정리
+- 자동 재시도 로그 한국어 / English 지원
+- Windows 선택 코드칸 화살표 caret 동작 안정화
+- 전체 회귀 테스트 199개 통과 및 Windows 패키징 검증 완료
 
 ## v0.8.3 수정사항
 
