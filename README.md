@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.7**
+현재 최신 배포 버전: **v0.8.8**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,17 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.7 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.7/StemLab-Setup-x64.exe
+- v0.8.8 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.8/StemLab-Setup-x64.exe
+
+## v0.8.8 수정사항
+
+- NVIDIA GPU가 없는 CPU 분리에서 Demucs를 2개 작업으로 병렬 처리하도록 개선
+- CPU 병렬화는 모델, overlap, shifts 등 음질 관련 설정을 변경하지 않고 처리 속도만 개선
+- CUDA 분리는 기존 동작을 유지하며 CPU 전용 병렬 옵션을 적용하지 않음
+- YouTube 오디오 가져오기에서 강제로 지정했던 20초 socket timeout 및 yt-dlp 내부 retry override 제거
+- 첫 다운로드는 yt-dlp 기본 네트워크 정책을 그대로 사용하고, 일시 오류 재시도에서만 IPv4 fallback 적용
+- yt-dlp를 `2026.8.19`로 실제 고정해 빌드 시점에 따른 다운로드 동작 변동 방지
+- 로컬 원클릭 배포에서 배포 전 버전 검증과 public 배포 README 자동 동기화 적용
 
 ## v0.8.7 수정사항
 
