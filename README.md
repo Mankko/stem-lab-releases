@@ -2,7 +2,7 @@
 
 Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
-현재 최신 배포 버전: **v0.8.4**
+현재 최신 배포 버전: **v0.8.7**
 
 소스 코드는 이 저장소에 포함하지 않습니다. 일반 사용자가 설치할 수 있는 Windows 배포본만 GitHub Releases로 제공합니다.
 
@@ -10,7 +10,30 @@ Stem Lab의 **공개 Windows 설치파일 배포 전용 저장소**입니다.
 
 - 최신 Windows 설치파일: https://github.com/Mankko/stem-lab-releases/releases/latest/download/StemLab-Setup-x64.exe
 - 최신 Release 페이지: https://github.com/Mankko/stem-lab-releases/releases/latest
-- v0.8.4 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.4/StemLab-Setup-x64.exe
+- v0.8.7 설치파일: https://github.com/Mankko/stem-lab-releases/releases/download/v0.8.7/StemLab-Setup-x64.exe
+
+## v0.8.7 수정사항
+
+- YouTube 오디오 가져오기 첫 시도는 yt-dlp 기본 네트워크 정책을 유지하고, 일시 오류 재시도에서만 IPv4 fallback 적용
+- Windows 배율/폰트 크기 조합에서 첫 번째 탭의 GroupBox와 입력 필드가 세로로 눌리며 겹치던 UI 문제 수정
+- 노래 선택/파트 나누기 탭을 DPI-aware 최소 높이로 유지
+- 창 높이가 부족한 경우 내부 컨트롤을 압축하지 않고 세로 스크롤로 전환
+- 노래 선택/분리 설정 GroupBox가 자연 높이 이하로 줄어들지 않도록 보호
+
+## v0.8.6 수정사항
+
+- v0.8.5에서 남아 있던 Windows 오류 448 재발 문제 수정
+- uv가 만든 venv의 `Scripts\\python.exe`가 reparse/junction 경로가 되어 차단되는 환경을 우회
+- Demucs 및 코드악보 런타임 생성 시 `uv venv` 대신 실제 CPython으로 `python -m venv --copies --without-pip` 사용
+- venv 내부 Python 실행 파일을 실제 복사 파일로 만들어 `STATUS_UNTRUSTED_MOUNT_POINT` 경로를 제거
+- Demucs/Chord runtime revision을 올려 기존 손상된 venv를 자동 재생성
+
+## v0.8.5 수정사항
+
+- Windows 일부 환경에서 uv가 Python 3.12 다운로드 후 minor-version junction 생성 중 오류 코드 448로 실패하던 문제 우회
+- `cpython-3.12.x-windows-x86_64-none\\python.exe` 실제 patch interpreter를 직접 탐색해 사용
+- 깨진 `cpython-3.12-windows-x86_64-none` junction이 남아 있어도 Demucs/코드악보/보컬 런타임 구성이 계속 진행되도록 보강
+- 이후 uv venv/tool 호출에는 `3.12` 별칭 대신 실제 Python 실행 파일 절대 경로 전달
 
 ## v0.8.4 수정사항
 
