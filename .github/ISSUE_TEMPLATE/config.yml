@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Stem Lab Free Beta download
+    url: https://github.com/Mankko/stem-lab-releases/releases/tag/v0.9.0-beta.1
+    about: Download the current public beta for Windows 10/11 x64.
