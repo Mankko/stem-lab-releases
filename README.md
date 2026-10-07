@@ -8,6 +8,8 @@ Stem Lab Free combines stem separation, song analysis, practice playback, audio 
 > Windows 10 / 11 x64  
 > No account. No subscription. No song limit. No expiration date.
 
+![Stem Lab Free - Listen, Mix, and Export](assets/screenshots/02-listen-export.png)
+
 ## Download
 
 ### Stem Lab Free v0.9.0-beta.1
@@ -24,6 +26,28 @@ Stem Lab Free combines stem separation, song analysis, practice playback, audio 
 
 > GitHub's **Latest** badge currently still points to the previous stable release, v0.8.8.  
 > For the Free Beta, use the v0.9.0-beta.1 link above.
+
+---
+
+# Screenshots
+
+## Separate Songs Into 4 Stems
+
+Import local audio or a YouTube URL, choose the Free 4-stem mode, and optionally generate a chord sheet during the same workflow.
+
+![Stem Lab Free - Separate Songs Into 4 Stems](assets/screenshots/01-separate.png)
+
+## Listen, Mix, and Export
+
+Adjust each stem, analyze BPM / Key, preview the selected practice mix, and export WAV / MP3 from the same selection.
+
+![Stem Lab Free - Listen, Mix, and Export](assets/screenshots/02-listen-export.png)
+
+## Generate and Edit Chord Sheets
+
+Generate an editable chord sheet, transpose or correct chords, copy text, and keep saved sheets in the local library.
+
+![Stem Lab Free - Generate and Edit Chord Sheets](assets/screenshots/03-chord-sheet.png)
 
 ---
 
