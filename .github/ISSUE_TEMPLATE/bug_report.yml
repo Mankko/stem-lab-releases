@@ -1,0 +1,110 @@
+name: Bug Report
+description: Report a problem with Stem Lab Free Beta
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Stem Lab Free Beta.
+
+        Please do **not** upload copyrighted third-party songs or separated stem files.
+        Screenshots and error messages are welcome when they do not expose private information.
+
+  - type: input
+    id: version
+    attributes:
+      label: Stem Lab version
+      description: You can find the version in the app title/header.
+      placeholder: "v0.9.0-beta.1"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      description: Include the exact GPU model if possible. Write "No dedicated GPU" if applicable.
+      placeholder: "NVIDIA GeForce RTX 4070 Laptop GPU"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did the problem happen?
+      options:
+        - Installation / first launch
+        - Local audio import
+        - YouTube audio import
+        - Stem separation
+        - BPM / Key analysis
+        - Listen / Player
+        - WAV / MP3 export
+        - Chord sheet generation
+        - Chord sheet editing / saving
+        - Update check
+        - UI / layout
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Briefly describe the problem and what you expected instead.
+      placeholder: |
+        What I did:
+        What happened:
+        What I expected:
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the shortest sequence of steps that reproduces the problem.
+      placeholder: |
+        1. Launch Stem Lab
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message / log
+      description: Paste the relevant error text if one was shown. Please remove personal paths or private information if needed.
+      render: text
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag and drop a screenshot here if it helps explain the issue. Do not attach copyrighted audio.
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Add anything else that may help reproduce or diagnose the issue.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I did not attach copyrighted third-party audio or separated stem files.
+          required: true
+        - label: I checked that this issue is not already reported.
+          required: true
