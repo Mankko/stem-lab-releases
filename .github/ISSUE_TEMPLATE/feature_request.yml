@@ -1,0 +1,69 @@
+name: Feature Request
+description: Suggest an improvement for Stem Lab Free
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement.
+
+        Please focus on the practice workflow or user experience you want to improve, rather than only naming a feature.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the situation where Stem Lab currently feels limited, slow, confusing, or inconvenient.
+      placeholder: "When practicing ..., I currently have to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What would you like Stem Lab to do?
+      description: Describe the behavior you would like to see.
+      placeholder: "I would like Stem Lab to ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this relate to?
+      options:
+        - Song import
+        - Stem separation
+        - BPM / Key analysis
+        - Listen / Player
+        - WAV / MP3 export
+        - Chord sheets
+        - Saved sheet library
+        - UI / workflow
+        - Installation / updates
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      description: If possible, describe how you would use this feature during real practice.
+      placeholder: |
+        Example:
+        1. Load a song
+        2. ...
+        3. ...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround
+      description: How do you handle this today, if at all?
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Add screenshots, mockups, or references if useful.
