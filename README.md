@@ -265,4 +265,4 @@ Release 페이지에 GitHub가 자동으로 표시하는 `Source code (zip)` / `
 
 ---
 
-© Mankko — Stem Lab
+© MDI Soft — Stem Lab
